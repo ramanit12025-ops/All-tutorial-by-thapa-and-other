@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    background-color: #ffffff07;
+    background-image: url(best-smart-TVs-in-india.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: right; */
+    background-blend-mode: difference;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.cvfirst {
+    width: 12vw;
+    height: 18vh;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    border: 6px solid brown;
+    border-radius: 30%;
+}
+
+.cvtwo {
+    display: flex;
+    width: 30.5vw;
+    height: 38vh;
+    position: absolute;
+    left: 34.4%;
+    top: 32%;
+    cursor: pointer;
+}
+
+div {
+    border: 1px solid magenta;
+}
+
+h1 {
+    background-color: hwb(141 0% 0%);
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box {
+    text-align: center;
+
+}
+
+#firstbox {
+    margin-left: 30%;
+    color: red;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#secondbox {
+    color: #008cff;
+    position: absolute;
+    top: 96.6%;
+    left: 5%;
+
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45%;
+    position: relative;
+    top: 61.9%;
+    left: 33%;
+    height: 9px;
+    width: 40px;
+    background-color: #fff;
+    border: 2px solid rebeccapurple;
+    padding: 0;
+    overflow: hidden;
+}
+
+#btn a {
+    display: flex;
+    width: 38px;
+    height: 8px;
+    font-size: 6px;
+    color: rebeccapurple;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    left: 8px;
+    top: 70%;
+    line-height: 2px;
+    /* same as button height for vertical centering */
+    font-weight: bold;
+    cursor: pointer;
+}

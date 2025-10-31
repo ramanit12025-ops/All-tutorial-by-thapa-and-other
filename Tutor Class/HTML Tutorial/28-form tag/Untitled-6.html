@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+      <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: border-box; */
+      }
+      body {
+        /* margin:5px; */
+        background-color: hwb(44 29% 6% / 0.785);
+        /* width: 100vw; */
+        height: 100vh;
+        /* border: 2px solid red; */
+      }
+      .page {
+        box-sizing: border-box;
+        display: flex;
+        flex-flow: row;
+        gap: 0;
+        /* flex-wrap: wrap; */
+        margin: 40px;
+        padding: 70px;
+        background-color: white;
+      }
+      header {
+        width: calc(100%-120px);
+        margin: 60px;
+
+        text-align: center;
+        font-size: 28px;
+        color: #5c4033;
+        /* border: 2px solid #00ff37; */
+      }
+      .page-box1 {
+        box-sizing: border-box;
+        width: calc(100%-80px);
+        height: 2000px;
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 45px;
+        /* padding-right: 0px; */
+        /* border: 2px solid rebeccapurple; */
+      }
+      .mypic {
+        width: 200px;
+        margin-left: 60px;
+        border-radius: 30px;
+      }
+      .highly {
+        height: 200px;
+        width: 300px;
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Zalando Sans Expanded", sans-serif;
+        margin-top: 45px;
+        margin-left: 40px;
+        border-radius: 50px;
+        /* justify-content: center; */
+        align-items: flex-start;
+        display: flex;
+        text-align: center;
+        /* border: 2px solid #369933; */
+      }
+      .design-box1 {
+        height: 30px;
+        width: 300px;
+        margin-top: 8px;
+        margin-left: 40px;
+        border-radius: 50px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 50px;
+        /* border: 2px solid rebeccapurple; */
+      }
+      .design {
+        height: 30px;
+        width: 180px;
+        border-radius: 50px;
+        background-color: #c6d43b;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+      .arrewo {
+        width: 50px;
+        height: 30px;
+        border-radius: 100px;
+        background-color: black;
+        color: hsl(210, 43%, 97%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .box-heading {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-top: 55px;
+      }
+      .education-box {
+        background-color: hsla(210, 5%, 92%, 0.815);
+        width: 400px;
+        height: 220px;
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        border-radius: 7px;
+        align-content: flex-start;
+        justify-content: center;
+        /* border: 2px solid darkmagenta; */
+      }
+      .education-entery {
+        display: flex;
+        flex-flow: row;
+        margin: 5px;
+        /* border: 2px solid darkorange; */
+      }
+
+      .education-entery1 {
+        display: flex;
+        flex-flow: column;
+        margin: 5px;
+        /* border: 2px solid darkorange; */
+      }
+      .line {
+        display: inline-block;
+        width: 2px;
+        border-radius: 2px;
+        background-color: #c6d43b;
+        /* border: 1px solid fuchsia; */
+        margin-top: 10px;
+      }
+      .degree {
+        font-size: 20px;
+      }
+      .year-level {
+        border-radius: 20px;
+        /* border: 2px solid red; */
+        width: 90px;
+        height: 29px;
+        background-color: #c6d43b;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+      .box-headingtwo {
+        margin-top: 20px;
+        margin-left: 14px;
+        /* border: 2px solid red; */
+      }
+      .section {
+        background-color: hsla(210, 5%, 92%, 0.815);
+        width: 400px;
+        height: 300px;
+        margin-top: 0;
+        margin-left: 10px;
+        border-radius: 10px;
+        /* border: 0.5px solid red; */
+      }
+      .skills {
+        height: 250px;
+        margin-left: 20px;
+        margin-top: 10px;
+        padding-top: 20px;
+        /* border:  2px solid greenyellow; */
+        display: flex;
+        flex-flow: row;
+        gap: 8px;
+      }
+      .image-box {
+        margin-top: 5px;
+        display: flex;
+        flex-flow: column;
+        gap: 4.5px;
+        /* border: 2px solid greenyellow; */
+      }
+      .image {
+        width: 30px;
+        /* border: 2px solid red; */
+        margin-left: -8px;
+      }
+      .text-box {
+        margin: 5px;
+        display: flex;
+        flex-flow: column;
+        gap: 12px;
+        font-size: 20px;
+        /* border: 2px solid forestgreen; */
+      }
+      .bar-box {
+        margin-top: 4px;
+        display: flex;
+        flex-flow: column;
+        gap: 12px;
+        /* border: 2px solid yellowgreen; */
+      }
+      .bar {
+        margin-bottom: 5px;
+        /* border: 2px solid magenta; */
+      }
+      progress {
+        width: 150px;
+        height: 12px;
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      progress::-webkit-progress-bar {
+        background-color: hwb(200 79% 20% / 0.815); /* Blank part */
+        border-radius: 10px;
+      }
+      progress::-webkit-progress-value {
+        background-color: #c6d43b; /* Filled part */
+        border-radius: 10px;
+      }
+      .section2 {
+        background-color: hsla(210, 5%, 92%, 0.815);
+        width: 400px;
+        height: 260px;
+        margin-top: 0;
+        margin-left: 10px;
+        border-radius: 10px;
+        /* border: 0.5px solid red; */
+      }
+      .box-heading2 {
+        margin-top: 20px;
+        margin-left: 13px;
+      }
+      .education-box2 {
+        background-color: hsla(210, 5%, 92%, 0.815);
+        width: 400px;
+        height: 220px;
+        margin-left: 10px;
+        margin-top: 0px;
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        border-radius: 7px;
+        align-content: flex-start;
+        justify-content: center;
+        /* border: 2px solid darkmagenta; */
+      }
+      .page2 {
+        display: flex;
+        flex-flow: column;
+        /* border: 3px solid greenyellow; */
+        background-color: #ffffff;
+        width: 600px;
+      }
+      .page-box2 {
+        box-sizing: border-box;
+        width: 490px;
+        height: 180px;
+        background-color: #ffffff;
+        margin-left: 0px;
+        padding-top: 5px;
+        padding-right: 5px;
+        /* border: 2px solid rebeccapurple; */
+        display: flex;
+        flex-flow: row;
+        gap: 20px;
+      }
+      .folio-box {
+        /* border: 2px solid greenyellow; */
+        width: 230px;
+        height: 160px;
+        display: flex;
+        flex-flow: column;
+        gap: 3px;
+      }
+      .folio-div {
+        /* border: 2px solid firebrick; */
+        width: 200px;
+      }
+      .contact-box {
+        /* border: 2px solid magenta; */
+        width: 300px;
+        height: 150px;
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+      }
+      .contact {
+        /* border: 2px solid sandybrown; */
+        height: 90px;
+        display: flex;
+        flex-flow: column;
+        gap: 13px;
+      }
+      .scan-box {
+        margin-top: 20px;
+        /* border: 2px solid darkorange; */
+        display: flex;
+        flex-flow: row;
+        width: 200px;
+        height: 80px;
+        gap: 2px;
+        align-items: center;
+      }
+      .head {
+        /* border: 2px solid darkorchid; */
+        width: 130px;
+        height: 80px;
+        display: flex;
+        flex-flow: column;
+        gap: 0px;
+      }
+      .scan {
+        width: 60px;
+        /* border: 2px solid violet; */
+        margin-left: 0px;
+        height: 80px;
+      }
+      .qr {
+        width: 50px;
+        /* max-height:100%; */
+        /* border: 2px solid #f61111; */
+        /* object-fit: contain; */
+        margin-left: 5px;
+        margin-top: 25px;
+      }
+      .pra {
+        height: 20px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration-thickness: 20px;
+        line-height: 19px;
+        /* border: 2px solid red; */
+      }
+      .link {
+        margin-left: 20px;
+      }
+      .svg {
+        background-color: black;
+        border-radius: 50px;
+        color: #c6d43b;
+        width: 18px;
+        height: 20px;
+        /* border: 2px solid darkorange; */
+      }
+      
+      .sub-contact {
+        display: flex;
+        flex-flow: row;
+        gap: 12px;
+        /* border: 2px solid greenyellow; */
+      }
+      .svg-image {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        /* border: 2px solid red; */
+      }
+      .text-box2 {
+        display: flex;
+        flex-flow: column;
+        /* gap: 50px; */
+        /* border: 2px solid green; */
+      }
+      .box-heading4 {
+        font-family: serif;
+        margin-top: 20px;
+        margin-left: 13px;
+      }
+      .box-heading5 {
+        font-family: serif;
+        margin-top:10px;
+        margin-left: 15px;
+      }
+      .ppra1 {
+        background-color: hsl(210, 5%, 92%, 0.815);
+        border-radius: 10px;
+        width: 500px;
+        height: 110px;
+        margin-top: 10px;
+        margin-left: 10px;
+        /* border: 2px solid red; */
+      }
+      .ppra {
+        font-family: "Times New Roman", Times, serif;
+        background-color: hsl(210, 5%, 92%, 0.815);
+        border-radius: 10px;
+        width: 480px;
+        margin-top: 13px;
+        margin-left: 18px;
+        /* border: 2px solid greenyellow; */
+      }
+      .workexbox {
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 500px;
+        height: 200px;
+        background-color: hsl(210, 5%, 92%, 0.815);
+        border-radius: 10px;
+        /* border: 2px solid #5d9607e7; */
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+      }
+      .workbox {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        /* gap: 30px; */
+        /* border: 2px solid red; */
+      }
+      .uiartist {
+        display: flex;
+        flex-flow: column;
+        gap: 2px;
+        /* border: 2px solid greenyellow; */
+      }
+      .gamepra {
+        display: flex;
+        flex-flow: column;
+        gap: 0px;
+        margin-left: 50px;
+        box-sizing: border-box;
+        /* border: 2px solid #e516b5; */
+      }
+      .gamepra{
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .svgmark {
+        display: flex;
+        /* border: 2px solid darkmagenta; */
+        height: 15px;
+        width: 90px;
+      }
+      .dispra {
+        margin-left: 28px;
+        margin-top: 0;
+        padding-top: 0;
+      }
+      .dish4 {
+        /* border: 1px solid fuchsia; */
+        font-family:'Times New Roman', Times, serif;
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 3px;
+        letter-spacing: 0.8px;
+        line-height: 10px;
+      }
+      .date {
+        font-family: "Quicksand", sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        font-weight: weight;
+        font-style: normal;
+        width: 120px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 80px; */
+        margin-top: 3px;
+        background-color: #c6d43b;
+        border-radius: 15px;
+        /* border: 2px solid red; */
+        /* text-align: center; */
+      }
+      .uipara {
+        font-family: "Times New Roman", Times, serif;
+        margin-left: 20px;
+      }
+
+      /* it is second paragraph of work experience ----------------------------------------*/
+      .workpage{
+        width: 500px;
+        height: 260px;
+        background-color: hsl(210, 5%, 92%, 0.815);
+        /* border: 2px solid red; */
+        margin-top: 40px;
+        margin-left: 10px;
+        border-radius: 10px;
+      }
+     .color{
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-style: italic;
+  margin-left: 50px;
+}
+
+.black {
+  color: #000;
+}
+
+.blue {
+  color: #007BFF;
+}
+.uipara1{
+  margin-top: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 20px;
+}
+.workbox1 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        /* gap: 30px; */
+        /* border: 2px solid red; */
+      }
+      .uiartist1{
+        margin-left: 10px;
+        /* border: 2px solid green; */
+      }
+      .webd{
+        width: 250px;
+      }
+      .remote{
+        color: darkgray;
+        font-weight:bolder;
+        
+      }
+      .svg1{ 
+        margin-right: 0px;
+        /* border-radius: 50px; */
+        color: #c6d43b;
+        width: 28px;
+        height: 30px;
+        /* border: 2px solid darkorange; */
+      }
+      .date1{
+        font-family: "Quicksand", sans-serif;
+        font-size: 10px;
+        font-weight: bold;
+        font-weight: weight;
+        font-style: normal;
+        width: 120px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        margin-top: 3px;
+        background-color: #c6d43b;
+        border-radius: 15px;
+        /* border: 2px solid red; */
+        /* text-align: center; */
+      }
+      .hobbiesh2{
+        margin-left: 23px;
+      }
+      .hobbies{
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: hsl(210, 5%, 92%, 0.815);
+        width: 490px;
+        height: 115px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        /* border: 2px solid magenta; */
+      }
+      .hobbiesdiv{
+        margin-bottom: 0px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        /* background-color: #e516b5; */
+        /* border: 2px solid red; */
+        width:450px;
+        height: 90px;
+      }
+      .hobbiesimgdiv{
+        /* border:2px solid #001aff; */
+        display: flex;
+        justify-content: space-between;
+        width: 390px;
+        /* margin-bottom: 30px; */
+      }
+      .hobiimg{
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        background-color: #c6d43b;
+
+      }
+      .hobimage{
+        margin-top: 13px;
+        margin-left:13px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        /* background-color: #c6d43b; */
+        /* border: 2px solid green; */
+      }
+      .hobbiestextdiv{
+        /* border: 2px solid greenyellow; */
+        width: 410px;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10px;
+      }
+      .footballtext{
+        margin-left: 10px;
+      }
+      .designtext{
+        margin-left: 15px;
+      }
+      /* refrence section */
+      .refrenceh2{
+        margin-top: 10px;
+        margin-left: 23px;
+      }
+      .referencebox{
+        width: 490px;
+        background-color:hsl(210, 5%, 92%, 0.815);
+        display: flex;
+        justify-content: space-around;
+        height: 150px;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 20px;
+        /* border: 2px solid darkorange; */
+      }
+      .referencediv1{
+        /* border: 2px solid red; */
+        height: 100px;
+        margin-top: 35px;
+      }
+      .refrencedivline{
+        width: 1.5px;
+        height: 80px;
+        margin-top: 35px;
+        background-color: black;
+      }
+      .socailh2{
+        margin-top: 10px;
+        margin-left: 23px;
+      }
+      .socialmediadiv{
+        margin-top: 2px;
+        background-color:hsl(210, 5%, 92%, 0.815);
+        display: flex;
+        gap: 0px;
+        height: 190px;
+        width: 490px;
+        /* border: 2px solid greenyellow; */
+        margin-left: 20px;
+        border-radius: 10px;
+      }
+      .socialmediaicon{
+        /* border: 2px solid darkorange; */
+        width: 100px;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        margin-right: 0px;
+      }
+      .socialmediatext{
+        /* border: 2px solid green; */
+        display: flex;
+        flex-flow: column;
+        margin-left: 5px;
+      }
+      .linkedin{
+        width: 50px;
+        /* border: 2px solid gold; */
+        margin-left: 55px;
+      }
+      .github{
+        background-color: #000;
+        width: 27px;
+        margin-left: 70px;
+        /* border: 2px solid gold; */
+        /* margin-left: 10px; */
+      }
+      .instagram{
+        width: 27px;
+        margin-left: 70px;
+        /* border: 2px solid gold; */
+        /* margin-left: 10px; */
+      }
+      .linkedintext{
+        margin-top: 29px;
+      }
+      .Githubtext{
+        margin-top: 52px;
+      }
+      .Instagramtext{
+        padding-top: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Free Resume Template</h1>
+    </header>
+    <div class="page">
+      <div class="page-box1">
+        <img class="mypic"src="raman.jpg" alt="Raman-Thakur" />
+        <div class="design-box1">
+          <div class="arrewo">></div>
+          <div class="design">Graphic Designer</div>
+        </div>
+        <div class="highly"><h1>Hello, i'm Raman Thakur</h1></div>
+        <h2 class="box-heading">Education</h2>
+        <div class="education-box">
+          <div class="education-entery">
+            <div class="line"></div>
+            <div class="education-entery1">
+              <div class="year-level">2021-2024</div>
+              <div class="degree">B.sc Computer-Application</div>
+              <div class="instituation">
+                C.S.J.M.University (kanpur)[Uttar-Pradesh]
+              </div>
+            </div>
+          </div>
+          <div class="education-entery">
+            <div class="line"></div>
+            <div class="education-entery1">
+              <div class="year-level">2024</div>
+              <div class="degree">Front-end Devloper</div>
+              <div class="instituation">AI-Mantra</div>
+            </div>
+          </div>
+        </div>
+        <h2 class="box-headingtwo">Skills</h2>
+        <div class="section">
+          <div class="skills">
+            <div class="image-box">
+              <img
+                src="adobe-photoshop-icon-25.png"
+                alt="photoshope"
+                class="image"
+              />
+              <img
+                src="adobe-illustrator-icon-free-png.webp"
+                alt="Illustrator"
+                class="image"
+              />
+              <img
+                src="image_processing20210620-25815-118h3kn.png"
+                alt="figma"
+                class="image"
+              />
+              <img
+                src="adobe-xd-icon-free-png.webp"
+                alt="adobe-xd"
+                class="image"
+              />
+              <img
+                src="adobe-premiere-pro-icon-free-png.webp"
+                alt="Premiere-pro"
+                class="image"
+              />
+              <img
+                src="adobe-after-effects-icon-free-png.webp"
+                alt="after-effect"
+                class="image"
+              />
+              <img
+                src="blender-transparent-background-icon-free-png.webp"
+                alt="blender"
+                class="image"
+              />
+            </div>
+            <div class="text-box">
+              <div>Photoshop</div>
+              <div>Illustrator</div>
+              <div>Figma</div>
+              <div>Adobe XD</div>
+              <div>Premiere Pro</div>
+              <div>After Effects</div>
+              <div>Blender</div>
+            </div>
+            <div class="bar-box">
+              <div class="bar"><progress value="80" max="100"></progress></div>
+              <div class="bar"><progress value="30" max="100"></progress></div>
+              <div class="bar"><progress value="60" max="100"></progress></div>
+              <div class="bar"><progress value="40" max="100"></progress></div>
+              <div class="bar"><progress value="65" max="100"></progress></div>
+              <div class="bar"><progress value="80" max="100"></progress></div>
+              <div class="bar"><progress value="95" max="100"></progress></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="box-headingtwo">Experties</h2>
+        <div class="section2">
+          <div class="skills">
+            <div class="image-box">
+              <img
+                src="ui-ux-icon-sign-design-free-png.webp"
+                alt="photoshope"
+                class="image"
+              />
+              <img
+                src="game-controller-3d-icon-with-gaming-and-esports-theme-png.webp"
+                alt="Illustrator"
+                class="image"
+              />
+              <img src="web2041824.png" alt="figma" class="image" />
+              <img src="post 11013442.png" alt="adobe-xd" class="image" />
+              <img src="vector 7766273.png" alt="Premiere-pro" class="image" />
+              <img
+                src="pro design 3892145.png"
+                alt="after-effect"
+                class="image"
+              />
+            </div>
+            <div class="text-box">
+              <div>App UI/UX</div>
+              <div>Game UI/UX</div>
+              <div>Web Design</div>
+              <div>Post production</div>
+              <div>Vector Art</div>
+              <div>Product Design</div>
+            </div>
+            <div class="bar-box">
+              <div class="bar"><progress value="80" max="100"></progress></div>
+              <div class="bar"><progress value="30" max="100"></progress></div>
+              <div class="bar"><progress value="60" max="100"></progress></div>
+              <div class="bar"><progress value="40" max="100"></progress></div>
+              <div class="bar"><progress value="65" max="100"></progress></div>
+              <div class="bar"><progress value="80" max="100"></progress></div>
+            </div>
+          </div>
+        </div>
+        <h2 class="box-heading2">Certification</h2>
+        <div class="education-box2">
+          <div class="education-entery">
+            <div class="line"></div>
+            <div class="education-entery1">
+              <div class="year-level">2021-2024</div>
+              <div class="degree">Photoshop Expert</div>
+              <div class="instituation">
+                Adobe CertifiedProfessional/Online
+              </div>
+            </div>
+          </div>
+          <div class="education-entery">
+            <div class="line"></div>
+            <div class="education-entery1">
+              <div class="year-level">2024</div>
+              <div class="degree">ADOBE ILLUSTRATOR</div>
+              <div class="instituation">Arena multimedia/Gurgaon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page2">
+        <div class="page-box2">
+          <div class="folio-box">
+            <div class="folio-div">
+              <h2>Portfolio</h2>
+            </div>
+            <div class="scan-box">
+              <div class="head">
+                <h3 class="box-heading3">AI Mantra.com</h3>
+                <p class="pra">Raman-Thakur</p>
+              </div>
+              <div class="scan">
+                <img
+                  src="qr-code-code-code-scan-scanner-icon-icon-20.png"
+                  class="qr"
+                />
+              </div>
+            </div>
+            <div class="link">
+              <a href="https://csms.aimantra.co/" target="_blank"
+                >https://csms.aimantra.co/</a
+              >
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <h2 class="conhead">Contact</h2>
+            <div class="sub-contact">
+              <div class="svg-image">
+                <svg
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg"
+                >
+                  <path
+                    d="M19 8V2M16 5H22M22 12V17.2C22 18.8802 22 19.7202 21.673 20.362C21.3854 20.9265 20.9265 21.3854 20.362 21.673C19.7202 22 18.8802 22 17.2 22H6.8C5.11984 22 4.27976 22 3.63803 21.673C3.07354 21.3854 2.6146 20.9265 2.32698 20.362C2 19.7202 2 18.8802 2 17.2V6.8C2 5.11984 2 4.27976 2.32698 3.63803C2.6146 3.07354 3.07354 2.6146 3.63803 2.32698C4.27976 2 5.11984 2 6.8 2H12M2.14574 19.9263C2.61488 18.2386 4.1628 17 6 17H13C13.9293 17 14.394 17 14.7804 17.0769C16.3671 17.3925 17.6075 18.6329 17.9231 20.2196C18 20.606 18 21.0707 18 22M14 9.5C14 11.7091 12.2091 13.5 10 13.5C7.79086 13.5 6 11.7091 6 9.5C6 7.29086 7.79086 5.5 10 5.5C12.2091 5.5 14 7.29086 14 9.5Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg"
+                >
+                  <path
+                    d="M21.5 18L14.8571 12M9.14286 12L2.50003 18M2 7L10.1649 12.7154C10.8261 13.1783 11.1567 13.4097 11.5163 13.4993C11.8339 13.5785 12.1661 13.5785 12.4837 13.4993C12.8433 13.4097 13.1739 13.1783 13.8351 12.7154L22 7M6.8 20H17.2C18.8802 20 19.7202 20 20.362 19.673C20.9265 19.3854 21.3854 18.9265 21.673 18.362C22 17.7202 22 16.8802 22 15.2V8.8C22 7.11984 22 6.27976 21.673 5.63803C21.3854 5.07354 20.9265 4.6146 20.362 4.32698C19.7202 4 18.8802 4 17.2 4H6.8C5.11984 4 4.27976 4 3.63803 4.32698C3.07354 4.6146 2.6146 5.07354 2.32698 5.63803C2 6.27976 2 7.11984 2 8.8V15.2C2 16.8802 2 17.7202 2.32698 18.362C2.6146 18.9265 3.07354 19.3854 3.63803 19.673C4.27976 20 5.11984 20 6.8 20Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <svg
+                  width="15px"
+                  height="15px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="svg"
+                >
+                  <path
+                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22C13 17 20 16.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 16.4183 11 17 12 22Z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="text-box2">
+                <ul class="contact" style="list-style-type: none">
+                  <li>
+                    <a href="tel:+91 6396295383" class="text2">Contact Me</a>
+                  </li>
+                  <li>
+                    <a href="mailto:rsetw2003@gmail.com" class="text2"
+                      >Email Me</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://maps.app.goo.gl/mjmwEVeGhY32y2jn6"
+                      target="_blank"
+                      class="text2"
+                      >Etawah</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="box-heading4">Profile</h2>
+        <div class="ppra1">
+          <pre class="ppra">
+I am a highly skilled graphics designer with six years of experience in 
+thefield.Known for my creative flair and the ability to deliver impac-
+tful designs.I specialize in crafting visually stunning and memorable 
+creations.My work is marked by a keen eye for detail and a strong pas-
+sion for visual aesthetics.</pre
+          >
+        </div>
+        <!-- work experience box ------------------------------------------------------------- -->
+        <h2 class="box-heading5">work Experience</h2>
+        <div class="workexbox">
+          <div class="workbox">
+            <div class="uiartist">
+              <h4>UI/UX | CG Artist</h4>
+              <p>Game Distrtict</p>
+            </div>
+            <div class="gamepra">
+              <div class="svgmark">
+                <svg width="50" height="30" viewBox="0 20 10 100">
+                  <rect
+                    x="20"
+                    y="35"
+                    width="60"
+                    height="30"
+                    rx="10"
+                    fill="black"
+                  />
+                  <polygon
+                    points="50,20 32,50 70,50 50,80"
+                    fill="orange"
+                    class="yellowimagediv"
+                    style="border: 2px solid red"
+                  />
+                </svg>
+                <h4 class="gameh4">Game</h4>
+              </div>
+              <div class="dispra"><h4 class="dish4">Distrtict</h4></div>
+            </div>
+            <div class="date">Feb 2025-Nov 2019</div>
+          </div>
+          <pre class="uipara">
+At Game District, I worked on the game design and art of several hyper-
+casual, simulation, and PVP multiplayer mobile games. I worked on the 
+design UI/UX, visual effects, and post-productionof these games that 
+have garnered over a 10 Million monthly active users. In recognition
+of my professional excellence, I was awarded an Employee of the Qua-
+rter Award.
+          </pre>
+      </div>
+      <!-- work experince second box ----------------------------------------------------- -->
+      <div class="workpage">
+        <div class="workbox">
+          <div class="uiartist">
+            <h4>UI/UX Designer</h4>
+            <p>Tkxel</p>
+          </div>
+          <h1 class="color">
+  <span class="black">tk</span><span class="blue">xel</span>
+</h1>
+
+          <div class="date"> Dec 2025-Aug 2027</div>
+        </div>
+        <pre class="uipara1">
+As a Senior Designer her at Lime Agency is an extraordinary Singapore 
+Branding & Marketing Agency. Here, I was responsible for designing 
+user-friendly web and mobile interfaces while collaborating closely 
+with cross-functional teams. I conducted user research, usability testing,
+and created wireframes and prototypes to enhance user experiences. 
+Ensuring responsive design across various devices was a priority. I also 
+contributed to notable achievements, 20% increase in user engagement, 
+during my tenure</pre>
+      </div>
+      <!-- work experience third box ------------------------------------------------------------ -->
+      <div class="workpage">
+        <div class="workbox1">
+          <div class="uiartist1">
+            <h4 class="webd">UI/UX| Web Designer<span class="remote">(Remote)</span></h4>
+            <p>Lime Agency</p>
+          </div>
+          <img src="logo.svg" class="svg1">
+          <div class="date1"> Oct 2027-Apr 2029</div>
+        </div>
+        <pre class="uipara1">
+As a Senior Designer her at Lime Agency is an extraordinary Singapore 
+Branding & Marketing Agency. Here, I was responsible for designing 
+user-friendly web and mobile interfaces while collaborating closely 
+with cross-functional teams. I conducted user research, usability testing,
+and created wireframes and prototypes to enhance user experiences. 
+Ensuring responsive design across various devices was a priority. I also 
+contributed to notable achievements, 20% increase in user engagement, 
+during my tenure</pre>
+      </div><br>
+      <!-- Hobbies ------------------------------------------------------------------------- -->
+      <h2 class="hobbiesh2">Hobbies & Interests</h2>
+      <div class="hobbies">
+        <div class="hobbiesdiv">
+          <div class="hobbiesimgdiv">
+        <div class="hobiimg"><img src="football.svg" class="hobimage"></div>
+        <div class="hobiimg"><img src="window-edit-16-filled.svg" class="hobimage"></div>
+        <div class="hobiimg"><img src="book.svg" class="hobimage"></div>
+        </div>
+        <div class="hobbiestextdiv">
+          <div class="footballtext">Football</div>
+          <div class="designtext">Designing</div>
+          <div>Book Reading</div>
+        </div>
+        </div>
+      </div>
+      <!-- refrence section ------------------------------------------------------------------ -->
+      <h2 class="refrenceh2">Reference</h2>
+      <div class="referencebox">
+        <div class="referencediv1">
+          <h4>Mr. vinay sharma</h4>
+          <p>Manger</p>
+          <span>Email:</span><a href="mailto: vinaysharma@gmail.com" >mr.sharma</a><br>
+          <span> Whatsapp:</span><a href="tel:+91 6291728272">6291728272</a>
+        </div>
+        <div class="refrencedivline"></div>
+        <div class="referencediv1">
+          <h4>Mr. Vishal Bhadoriya</h4>
+          <p>Site Engineer</p>
+          <span>Email:</span><a href="mailto:vishal@gmail.com">Mr Bhadoriya</a><br>
+          <span>Whatsapp:</span><a href="tel:+91 9828379494">9828379494</a>
+        </div>
+      </div>
+      <!-- social media box ------------------------------------------------------------ -->
+      <h2 class="socailh2">Social Media</h2>
+      <div class="socialmediadiv">
+        <div class="socialmediaicon">
+         <img src="linkedinpng.webp" class="linkedin">
+         <img src="git2.webp" class="github">
+         <img src="insta.webp" class="instagram">
+        </div>
+        <div class="socialmediatext">
+         <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="linkedintext">Linkedin</a>
+         <a href="https://github.com/ramanit12025-del" class="Githubtext">Git-Hub</a>
+          <a href="https://www.instagram.com/reels/DO3iL17DeKx/?next=%2F" class="Instagramtext">Instagram</a>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <!-- <footer style="border: 2px solid fuchsia">Hello Thanks</footer> -->
+  </body>
+</html>

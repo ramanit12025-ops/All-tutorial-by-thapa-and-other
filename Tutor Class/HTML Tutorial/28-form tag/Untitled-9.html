@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Skills Progress</title>
+  <style>
+    
+
+    
+
+    .bar{
+      margin-bottom: 5px;
+    }
+
+    
+
+    progress {
+      width:150px;
+      height: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    /* ✅ Chrome / Safari / Edge */
+    progress::-webkit-progress-bar {
+      background-color: magenta;   /* Blank part */
+      border-radius: 10px;
+    }
+    progress::-webkit-progress-value {
+      background-color: #C6D43B;   /* Filled part */
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="bar-box">
+    <div class="bar"><progress value="90" max="100"></progress></div>
+    <div class="bar"><progress value="80" max="100"></progress></div>
+    <div class="bar"><progress value="70" max="100"></progress></div>
+    <div class="bar"><progress value="85" max="100"></progress></div>
+    <div class="bar"><progress value="75" max="100"></progress></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--<!DOCTYPE html>1st way it call inline css
+<html-- lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+</head>
+<body style="background-color: aqua;">
+    <h1 style="text-align:;color: magenta;">
+        My-Portfolio
+    </h1>
+</body>
+</html-->
+<!-- <!DOCTYPE html>it is call internal css
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my_Portfolio</title>
+    <style>
+        body {
+            background-color: aqua;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Skills</h1>
+</body>
+</html> -->

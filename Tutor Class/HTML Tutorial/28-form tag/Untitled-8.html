@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Template</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4e09c;
+      color: #333;
+    }
+    .resume {
+      width: 900px;
+      margin: 30px auto;
+      background: #fffaf0;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    header img {
+      width: 150px;
+      border-radius: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .title {
+      background: #d4d900;
+      display: inline-block;
+      padding: 5px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .section {
+      margin-top: 30px;
+    }
+    .section h2 {
+      font-size: 22px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .contact, .portfolio {
+      margin-top: 10px;
+    }
+    .contact p, .portfolio p {
+      margin: 5px 0;
+    }
+    .profile {
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    .edu, .exp {
+      margin-bottom: 20px;
+    }
+    .edu h3, .exp h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .date {
+      float: right;
+      background: #d4d900;
+      padding: 3px 10px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+    .skills, .expertise {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .bar {
+      background: #ccc;
+      border-radius: 10px;
+      height: 10px;
+      overflow: hidden;
+    }
+    .bar span {
+      display: block;
+      height: 100%;
+      background: #d4d900;
+      width: var(--level, 50%);
+    }
+    .hobbies {
+      display: flex;
+      gap: 20px;
+    }
+    .hobbies div {
+      text-align: center;
+      background: #d4d900;
+      padding: 10px;
+      border-radius: 8px;
+      width: 100px;
+    }
+    .reference {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <!-- Header -->
+    <header>
+      <img src="https://via.placeholder.com/150" alt="Profile Picture">
+      <div>
+        <div class="title">Graphics Designer</div>
+        <h1>Hello, I'm Muhammad Samdan</h1>
+        <div class="contact">
+          <p>📞 +92 3041006100</p>
+          <p>✉️ samdansaeed8@gmail.com</p>
+          <p>📍 Model Town Lahore, Pakistan</p>
+        </div>
+        <div class="portfolio">
+          <p><b>Portfolio:</b> <a href="https://www.behance.net/samdans">Behance.net/samdans</a></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Profile -->
+    <div class="section">
+      <h2>Profile</h2>
+      <p class="profile">
+        I am a highly skilled graphics designer with six years of experience in the field. Known for my creative flair and the ability to deliver impactful designs, I specialize in crafting visually stunning and memorable creations. My work is marked by a keen eye for detail and a strong passion for visual aesthetics.
+      </p>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>Bachelor of Fine Arts <span class="date">2015 - 2019</span></h3>
+        <p>National College of Arts / Lahore</p>
+      </div>
+      <div class="edu">
+        <h3>User Experience Design <span class="date">2019</span></h3>
+        <p>Georgia Institute / Online</p>
+      </div>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="section">
+      <h2>Work Experience</h2>
+      <div class="exp">
+        <h3>UI/UX | CG Artist - Game District <span class="date">Feb 2018 - Nov 2019</span></h3>
+        <p>Worked on game design and art of several mobile games, handling UI/UX, visual effects, and post-production.</p>
+      </div>
+      <div class="exp">
+        <h3>UI/UX Designer - Tkxel <span class="date">Dec 2019 - Aug 2021</span></h3>
+        <p>Collaborated with development teams on multiple projects as a UI/UX Designer.</p>
+      </div>
+      <div class="exp">
+        <h3>UI/UX | Web Designer (Remote) - Lime Agency <span class="date">Oct 2021 - Apr 2023</span></h3>
+        <p>Designed user-friendly web & mobile interfaces, conducted user research, created prototypes and enhanced UX across devices.</p>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div>Photoshop<div class="bar"><span style="--level:90%"></span></div></div>
+        <div>Illustrator<div class="bar"><span style="--level:85%"></span></div></div>
+        <div>Figma<div class="bar"><span style="--level:75%"></span></div></div>
+        <div>Adobe XD<div class="bar"><span style="--level:80%"></span></div></div>
+        <div>Premiere Pro<div class="bar"><span style="--level:70%"></span></div></div>
+        <div>After Effects<div class="bar"><span style="--level:65%"></span></div></div>
+        <div>Blender<div class="bar"><span style="--level:60%"></span></div></div>
+      </div>
+    </div>
+
+    <!-- Expertise -->
+    <div class="section">
+      <h2>Expertise</h2>
+      <div class="expertise">
+        <div>App UI/UX<div class="bar"><span style="--level:85%"></span></div></div>
+        <div>Game UI/UX<div class="bar"><span style="--level:80%"></span></div></div>
+        <div>Web Design<div class="bar"><span style="--level:75%"></span></div></div>
+        <div>Post Production<div class="bar"><span style="--level:70%"></span></div></div>
+        <div>Vector Art<div class="bar"><span style="--level:65%"></span></div></div>
+        <div>Product Design<div class="bar"><span style="--level:60%"></span></div></div>
+      </div>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="section">
+      <h2>Hobbies & Interests</h2>
+      <div class="hobbies">
+        <div>⚽ Football</div>
+        <div>🎨 Designing</div>
+        <div>📚 Books Reading</div>
+      </div>
+    </div>
+
+    <!-- Reference -->
+    <div class="section">
+      <h2>Reference</h2>
+      <div class="reference">
+        <div>
+          <b>Mr. Nabeel Anwar</b><br>
+          Lead Artist<br>
+          maliknabeel551@gmail.com<br>
+          Whatsapp: +92 3024712258
+        </div>
+        <div>
+          <b>Hafiz Hanzala</b><br>
+          Art Director<br>
+          hafizhanzala7@gmail.com<br>
+          Whatsapp: +92 3164950233
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
