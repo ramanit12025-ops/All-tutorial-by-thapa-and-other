@@ -1,0 +1,7 @@
+var=it use for when we need to change variable value then we use this 
+ex-
+var myName="Raman";
+myName="Mangal"
+console.log(myName);
+its mean that output come Mangal
+Const= it use for when we not need change value of variable

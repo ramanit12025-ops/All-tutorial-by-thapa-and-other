@@ -14,8 +14,9 @@
 //? There are two types of coercion in JavaScript: implicit and explicit. Implicit coercion happens automatically, while explicit coercion is done manually by the programmer.
 //! It's worth noting that type coercion can lead to unexpected results, so it's essential to be aware of how JavaScript handles these situations.
 
-// let sum = "5" + 10;
-// console.log(sum);
+// let sum = "vinod" - 10;
+let sum = 5 + "10" + "20"-10;
+console.log(sum);
 
 //* ============================
 //* Tricky Interview Questions

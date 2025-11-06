@@ -8,8 +8,8 @@
 
 //? Number: Represents numeric values, including integers and floating-point numbers.
 // Example:
-var myFavNum = -5;
-console.log(myFavNum);
+// var myFavNum ="raman";
+// console.log(myFavNum);
 
 //? String: Represents a sequence of characters enclosed in single or double quotes.
 // Example:
@@ -165,6 +165,8 @@ console.log(myFavNum);
 //? Also, to check whether a value is number or not we can use isNaN() function.
 
 // console.log(isNaN("vinod"));
+// console.log(isNaN("2"));//here 2 is not string here we clled number //
+
 // console.log(parseInt("xyz"));
 // console.log(parseInt("@#$"));
 
