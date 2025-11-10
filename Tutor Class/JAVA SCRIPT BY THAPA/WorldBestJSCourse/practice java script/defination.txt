@@ -1,7 +1,49 @@
-var=it use for when we need to change variable value then we use this 
+var=it use for when we need to change variable value then we use this and we can use for when we want get output out from block scope its work both inline bloke scope and out of block scope
 ex-
-var myName="Raman";
+(1)-var myName="Raman";
 myName="Mangal"
 console.log(myName);
-its mean that output come Mangal
-Const= it use for when we not need change value of variable
+output= Mangal
+
+(2 i)- Function modjs(MyName){
+    if(MyName){
+        var name="Raman";
+        var sname="thakur";
+        console.log("hello" +"name"+""+"sname");[its concinatation]
+    }
+}
+modjs(true);
+
+(2ii)- Function modjs(MyName){
+    if(MyName){
+        var name="Raman";
+        var sname="thakur";
+    }
+    console.log("hello" +"name"+""+"sname");[its concinatation]
+}
+modjs(true);
+in this both code we get output
+Const= it use for when we not need change value of variable but if we want to change value of const then output show error and it not work out from block scope 
+
+(3)-const myName= "Raman";
+myName="mangal";
+console.log(myName);
+
+(4i) Function modjs(MyName){
+    if(MyName){
+        let name="Raman";
+        const sname="thakur";
+        console.log("hello" +"name"+""+"sname");[its concinatation]
+    }
+}
+modjs(true);
+(4ii) Function modjs(MyName){
+    if(MyName){
+        let name="Raman";
+        const sname="thakur";
+    }
+    console.log("hello" +"name"+""+"sname");[its concinatation]
+}
+modjs(true);
+in this both code we get only from first one and not get output from second 
+output=TypeError: Assignment to constant variable
