@@ -458,7 +458,7 @@
 //  }
 //  console.log(space);
 // }
-// ------------------------------------------------------------------------------------function***************************************** -------------------
+// ----------------------------------------------------function***************************************** -------------------
 
 // function sum(a,b){
 //   console.log(a+b);
@@ -474,7 +474,7 @@
 // console.log(sum(3,2));
 // console.log(sum(2,2))
 
-// -------------------------------------------------------------------------------------------its called function invocation
+// ---------------------------------------------------------------------its called function invocation
 // function file(){//itwork
 //   console.log("raman");
 // }
@@ -647,10 +647,11 @@
 // }
 // let name=["raman","mangal","aman","vimal"];
 // console.log(name[3]);
-// console.log(name[-4]);//is se negative index nhi pata kar sakte hai negative index pata karne ke liye [] ki jagah .at() use karna padta hai and "string".at sepostive number ki index and negative number ki index number pata kar sakte hai but [] se negative index number pata nhi kar sakte hai 
+// console.log(name[-4]);//is se negative index nhi pata kar sakte hai negative index pata karne ke liye [] ki jagah .at() use karna padta hai and variable name.at se postive number ki index and negative number ki index number pata kar sakte hai but [] se negative index number pata nhi kar sakte hai 
 // console.log(name.length);
 // console.log(name.at(1))
 // console.log(name.at(-1))
+// ----------------------------------------------------------veriable ka type janane ke liye------------------------
 // let mane= [];
 // console.log(typeof mane);
 // --------------------------------------------------------
@@ -679,7 +680,7 @@
 // ----------------------------------------------------------------------its called ----for of loop-----------------------------
 // for( let item of name){
 //   console.log(item);
-// }
+// };
 // -----------------------------------------------------------------------we can do it same by use of foor loop------------------
 //  for( item=0; item<=name.length; item++){
 //   console.log(name[item]);
@@ -691,7 +692,7 @@
 // for (let item in name){
 //   console.log(item);
 // }
-// that why we called ittrable array for of loop and for in loop kiu ki ye one one by one outout dete hai jab tak loop ki condition false nhi ho jati 
+// that why we called ittrable array for of loop and for in loop kiu ki ye one one by one output dete hai jab tak loop ki condition false nhi ho jati 
 
 // ---------------------------------------------------------------------------------.For each ----------Function--------------------------------
 //  let fruit =["mangao","orange","apple","banana"]
@@ -707,6 +708,13 @@
 //  }
 // )
 // ham .foreach se bhi vahi output le sakte hai jo .map se le sakte hai lekin .foreach se return me value nhi le sakte jab ki .mpa me esa kar saktehai
+
+// let perents=["mango","haman","jaman","apple","dappel"];
+// let perentscard=perents.map((current)=>{
+//   return "mr."+current;
+// });
+// console.log(perentscard);
+
 //  --------------------------------------------------------Example-------------------------------------
 // let fruit =["mangao","orange","apple","banana"];
 
@@ -735,10 +743,10 @@
 // });
 // console.log(table);
 // --------------------------------------.map method without return use
-let table=[1,2,3,4,5,6,7,8,9,10];
-table.map((current,index,array)=>{
-console.log(current*2);  
-});
+// let table=[1,2,3,4,5,6,7,8,9,10];
+// table.map((current,index,array)=>{
+// console.log(current*2);  
+// });
 
 // -----------------------------------.forEach method with return use
 
@@ -755,4 +763,404 @@ console.log(current*2);
 // });
 // console.log(tebel);//iska output ek array ke form me ayega
 //  is baat ka dyan  rakhna jab bhi koi value retun chahiye to variable 
-// forEach kause tab karna jab hame itrable to ho but apko naye -----array---point noted array ki na ki normal element in output  vo to for each se mil sakte hai but array nhi milega output mai--ki jarurat na ho agar app chahte ho jo pehle array tha vo vesa he rhe and but hame return me dusra array bhi mil jaye jo tumne modification kiye hai vo dusre array mai mil jaye
+// forEach ka use tab karna jab hame itrable to ho but apko naye -----array---point noted array ki na ki normal element in output  vo to for each se mil sakte hai but array nhi milega output mai--ki jarurat na ho agar app chahte ho jo pehle array tha vo vesa he rhe and but hame return me dusra array bhi mil jaye jo tumne modification kiye hai vo dusre array mai mil jaye
+
+
+// ---------------------------------------------------------------------push----method to insert element in last in array------
+// let newword=["raman","amans","chaman","gaman","saman","daman"]
+// newword[0]="faman";//ye method element ko replace karta hai jo element ham dete hai us se
+// newword.push("raman");
+
+// ----------------------------------------------------------------------pop----method to remove last element from arrya------
+// newword.pop("chaman");
+// console.log(newword);
+
+// --------------------------------------example of push and pop method when we want to know that what give in retrun value after use these method------------
+// newword.push("raman");
+
+// console.log(newword.push())//ye number of elements batata hai ki array me kitne element hai ya new  length of array
+// console.log(newword);
+
+// console.log(newword.pop("haman"))//ye number of elements batata hai ki array me kya remove kiya 
+// console.log(newword);
+
+// ------------------------------------------------------------------unshift-------------method use for insert Element in starting of array----------
+// newword.unshift("sadhna");
+// console.log(newword.unshift());
+// console.log(newword);
+
+// ---------------------------------------------------------------------shift----------------method use for remove element from staring of array-------
+// newword.shift("sadhna");
+// console.log(newword.shift());
+// console.log(newword);
+
+// ------------------------------------------------------------------------splice-----method use to add-------------
+// let newword=["raman","amans","chaman","gaman","saman","daman"]
+ 
+// console.log(newword.splice(3,0,"NAman","jaman","haman"));
+// console.log(newword.splice(-1,0,"jaman","laman","oman"));//ye last se ek kaam se element ko add karta hai 
+// console.log(newword.splice(newword.length,0,"jaman","laman","oman"));// ye elements ko last se add karta hai
+//  console.log(newword);
+
+// 🔹 Example 1: Only Update (No Delete)
+// javascript
+// let fruits = ["Apple","Banana","Mango"];
+// // index 1 पर "Banana" को "Orange" से replace करना
+// fruits.splice(1, 1, "Orange");
+
+// console.log(fruits);
+// Output: ["Apple","Orange","Mango"]
+
+// 🔹 Example 2:
+// const months = ["Jan", "march", "April", "June", "July"];
+
+// // Step 1: Find index of "march"
+// const indexToUpdate = months.indexOf("march");
+
+// // Step 2: Replace using splice
+// if (indexToUpdate !== -1) {
+//   months.splice(indexToUpdate, 1, "March");
+// }
+
+// console.log(months);
+// Output: ["Jan", "March", "April", "June", "July"]
+
+
+// 🔹 Example 3:
+// let months=["Jan", "March", "April", "June", "July"];
+// const indexToUpdate = months.indexOf("march");
+// months.splice(indexToUpdate, 1, "March");
+//  console.log(months.indexOf("June"));
+//  console.log(months.splice(3,1));
+//  console.log(months);
+
+
+
+// --------------------------------------------------------------find index number by name of element---------------------------------------------------
+
+
+
+// किसी array में दिए गए नाम का index (number/position) आसानी से निकाल सकते हो। इसके लिए JavaScript में कुछ methods हैं:
+
+// 📌 Example Array
+// javascript
+// let names = ["Chaman","Raman","laman","Atman", "Agman","Aman", "Chaman", "Suman", "Gagan", "Chaman", "Suman", "Gagan", "Chaman"];
+// 🔹 तरीका 1: indexOf()
+// javascript
+// console.log(names.indexOf("Chaman"));  
+// // Output: 2
+// 👉 यहाँ "Chaman" का index 2 है (क्योंकि array 0 से शुरू होता है)।
+// -------------------------------------------------------------------find index number Element name,kis index number jaha se pata krna hai-------
+// 🔹 तरीका 2: indexOf(index element name,index number jaha se pata krna hai )
+// console.log(names.indexOf("Chaman",2)); 
+
+// console.log(names.indexOf("Chaman",6)); //iska output -1 ayega kiyu ki jis element ka muje indexnumber pata karna hai uska index number(jaha se pata karna hai) diye gya index se kam hai
+
+// console.log(names.lastIndexOf("Chaman"));// jab ak array mai kafhi same element ho tab muje jo last mai hoga uska index number   output me  dega
+
+// console.log(names.lastIndexOf("Chaman",7)); 
+// Array में "Chaman" है index: 0, 6, 9, 12
+
+// तुमने लिखा lastIndexOf("Chaman", 7) 👉 इसका मतलब है: "Index 7 से पीछे की तरफ search करो।"
+
+// Step by step:
+
+// Index 7 → "Suman" (match नहीं)
+
+// Index 6 → "Chaman" ✅ match मिल गया।
+
+
+// 🔹 तरीका 3: findIndex()
+// javascript
+// let position = names.findIndex(name => name === "Suman");
+// console.log(position);  
+// // Output: 3
+// 👉 "Suman" का index 3 मिलेगा।
+
+// 🔹 तरीका 4: अगर नाम मौजूद नहीं है
+// javascript
+// console.log(names.indexOf("XYZ"));  
+// // Output: -1
+// 👉 अगर नाम array में नहीं है तो -1 return होगा।
+
+// ---------------------------------------------------know that Elementexist or not-------------------------
+// agar apko pata karna hai ki ye element array mai exist karti hai ya nhi tab .includes method use karte hai 
+// console.log(names.includes("faman"));
+// console.log(names.includes("Raman"));
+// iska output true ya false ayega agar exist karta hai to true ayega nhi to false ayega 
+
+// ✅ Hinglish Summary
+// Tum indexOf() या findIndex() use करके किसी नाम का array number (index) निकाल सकते हो। अगर नाम नहीं मिला तो result -1 आएगा।
+
+
+
+// ---------------------------------------------------------------------------find and filter in Array------------------------------------
+
+// ------------------------------------------------------------------find---method is method array ka pehla element output me ata hai--------------------------------------------------
+// let num=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19];
+// const final=num.find((current)=>{
+//   return current;
+
+// })
+// console.log(final);
+
+
+// let num=[1,2,3,4,5,4,7,8,9,10,6,4,13,6,15,4,17,18,5];
+// const final=num.find((current)=>{
+//   return current>5;// when we use condition then it search by recursion or accursion method 
+
+// })
+// console.log(final);
+
+// let num=[1,2,3,4,5];
+// const final=num.map((current)=>{
+//   return current*2;
+//   })
+// console.log(final);
+// let result=final.find((current)=>{
+//   return current;
+// });
+// console.log(result);
+
+// let result=final.findIndex((current)=>{
+//   return current>5;
+// })
+// console.log(result);
+
+// ------------------------------------------------------------filter-----method--------------------------------
+
+// let num=[1,2,3,4,5,4,7,8,9,10,6,4,13,6,15,4,17,18,5];
+// const final=num.filter((current)=>{
+//   return current>5;// when we use condition then it search by recursion or accursion method   
+// })
+// console.log(final);
+// let uninum=6; 
+// let num=[1,2,3,4,5,6,7,8,9,6,10,,6,11,12,13,14,15,16,17,18,19];
+// let result=num.filter((current)=>{
+//   return(current!=uninum);
+// });
+// console.log(result);
+
+// let products=[
+//   { name:"Laptop",price:1200},
+//   { name:"Phone",price:800},
+//   { name:"Tablet",price:300},
+//   { name:"Smartwatch",price:150},
+
+// ]
+// let product=products.filter((current)=>{
+//   return(current.price<500);
+// })
+// console.log(product);
+
+// -----------------------------------------------------------------------------new Set-----Method in Array-------------------------------------
+//find unique value given array 
+// 1 way to solve problem
+
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// let unique=num.filter((current,index,array)=>{
+//   console.log(index);
+//   // console.log(array.indexOf(current));//[array[index] likhne se uss position ki value milti haicurrent: 10
+// // index: 0
+// // arr[index]: 10
+
+// // current: 20
+// // index: 1
+// // arr[index]: 20
+
+// // current: 30
+// // index: 2
+// // arr[index]: 30]
+// return array.indexOf(current)===index;
+// });
+// console.log(unique);
+
+// 2 way to solve problem
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// console.log(new Set(num));
+
+
+
+// --------------------------------------------------------------------------------------------------------Spread---method in Array----------------------------
+// ... its called spread method ye privious array se ek new array bana deta jo privious array se indipendent hota hai
+
+// example
+// let num = [1, 2, 3];  
+// let copy = [...num];//spread function sirf arrya ya object mai work karta hai
+// let cop = num;
+// num.push(4);
+// console.log(num);  // [1,2,3,4]
+// console.log(copy); // [1,2,3]
+// console.log(cop);
+
+// example
+// let gum=(1,2,3,4,5,6,7,8,9)//spread method yaha work nhi karega because that not array or object
+// let fel=(...gum)
+// gum.push(10);
+// let sop=gum
+
+// ---------------------------------------------------------------------------------------------------set convert in array----------------------
+// example
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// console.log([new Set(num)]);
+
+// ---------------------------------------------------------------------------------set convert in arrya with spread method---------------------------
+// example
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// console.log([...new Set(num)]);
+// ------------------------------------------------------------------------------------short---method-------------------------------
+// example
+// let fruit=["mango","haman","jaman","apple","dappel"];
+// fruit.sort()
+// console.log(fruit.sort());
+
+
+// let fruit=["mango","haman","jaman","apple","dappel"];
+// console.log(fruit);
+
+//[ let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// num.sort();
+// console.log(num);
+// JavaScript ka sort() method by default string comparison karta hai, number comparison nahi.
+// Matlab har element ko string mein convert karke compare karta hai:
+// "10" ko "2" se compare karega → aur "10" ko chhota samjhega kyunki "1" < "2" (lexicographical order).
+// Isliye output galat lagta hai, jaise:]
+
+// soloution
+// it use for assending order
+// example(1)
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// num.sort((a,b)=>{
+//   return a-b;
+// });
+// console.log(num);
+
+// example(2)
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// num.sort((a,b)=>{
+//   if (a>b) return 1;// here 1 means switch the function
+//   if(a<b) return -1;// here -1 means keep the order
+// });
+// console.log(num);
+
+// it use for desecnding order
+// it use for assending order
+// example(1)
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// num.sort((a,b)=>{
+//   return b-a;
+// });
+// console.log(num);
+
+// example(2)
+// let num=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// num.sort((a,b)=>{
+//   if (a>b) return -1;// here 1 means switch the function
+//   if(a<b) return 1;// here -1 means keep the order
+// });
+// console.log(num);
+
+// --------------------------------------------------convert--method----------------------------------
+// example
+// let fruit=["mango","haman","jaman","apple","dappel"];
+// let fruits=fruit.map((current,index,array)=>{
+//   return current.toUpperCase();
+// })
+// console.log(fruits);
+
+// ---------------------------------------------------Compression--method------------------
+// example - find the squre of even number 
+
+// let evensqure=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// let result=evensqure.map((current)=>{
+//   if (current%2==0)
+//     return current*current;
+// }).filter((current)=> current);
+// console.log(result);
+
+// let evensqure=[1,2,3,4,5,6,7,8,9,6,10,6,11,12,13,14,15,16,17,18,19];
+// let result=evensqure.map((current)=>(current%2==0 ?current*current:undefined));
+// let final=result.filter((current)=>current!=undefined);
+// console.log(final);
+
+// ------------------------------------------------------------reduce--method---------------------------
+
+// structure write to reduce method
+// array.reduce(function callback(accumulator, currentValue, index, array) {
+//   // Your logic here
+//   // Return the updated accumulator value
+// }, initialValue);
+
+// example
+// let cart=[100,200,400,800,450];
+// let Total=cart.reduce((accumulate,current,index,array)=>{
+//   return accumulate+current;
+// },0);
+// console.log(Total);
+
+// ----------------------------------------------------------strings-----------------------------------
+// find the leangth of string
+// example
+// let str="\"Hello\" Raman Thakur\n'badpra\'";            //here n use to get next line in output and \ use for take inverted commas or single qutes ,double qutes
+// console.log(str+str.length);                            //length start from 1 and index start from 0
+
+// ----------------------------------------------------search or find index number-----------method in string---------------------
+
+// let str="raman thakur badpura up";
+
+// let index=str.lastIndexOf("up");
+
+// let index=str.lastIndexOf("u");
+
+// let index=str.lastIndexOf("u",21); //ye backword check karega ecuse we use lastindex keyword here 21 is position jaha se search karna hai
+
+// let index=str.indexOf("u",21); //ye forword check karega ecuse we use lastindex keyword
+
+// let index=str.indexOf("u");// here we gate index number u but from thakur u
+
+// console.log(index);//its give index number of e 
+
+// console.log(str.indexOf("etawah"));//indexof case sencetive hota hai
+
+// console.log(str.indexOf("Etawah"));//case sencetive ki vajah se output -1 ayega
+
+// ------------------------------------------------string to arrya----------------------
+
+// in this method we convert full string in array
+
+// let str=new Array("raman thakur badpura etawah");
+// console.log(str);
+
+// in this method we convert every letter in single element in array form then we find index number use map method
+
+// let str="raman thakur badpura etawah";
+// console.log(str.includes("raman"));// that is use check existance of string or string letter
+
+// console.log(str.search("raman",21));// in search method we can not check backword index number like lastindex method becuse we can give postion number in lastindex method
+// console.log(str.search(/Raman/i));//here i use to ignore casesencetivity of letter
+// console.log(str.search(/Raman/g));//here g use to check full string that letter index number we want but it give first letter index number that matched in string so we not use in serch method it mostly
+// let newstr=Array.from(str);
+// // console.log(newstr); 
+
+// let mapstr=newstr.map((current,index)=>`${current}-${index}`);
+// console.log(mapstr);
+
+// ------------------------------------------------------------match---method--------------------------
+
+// example
+// let str="raman thakur badpura etawah";
+// let matchstr=str.match("Badpura");// ye bhi casecensetive hai and if string does not mached then it give null output 
+// console.log(str.match("badpura"));
+// let str="raman thakur badpura etawah thakur";
+// console.log(str.match(/thakur/g));//g called globel flag tat use as a full scenner of string so whense g keyword then we get all similar word that we want 
+// console.log(str.matchAll("thakur"));
+// console.log(...str.matchAll("thakur"));
+// let strresult=str.matchAll("thakur");
+// let result=[...strresult];
+//  console.log(result);
+
+//  we also use for loop
+  let str="raman thakur badpura etawah thakur";
+let fianlstr=[...str.matchAll("thakur")];
+console.log(fianlstr[0][0],fianlstr[1][0]);
+
